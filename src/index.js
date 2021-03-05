@@ -1,4 +1,4 @@
-import eventDispatcher from 'gr-event-dispatcher';
+import { eventDispatcher } from 'sandt-event-dispatcher';
 import removePrefix from './util/remove-prefix';
 import trim from './util/trim';
 import assign from './util/assign';

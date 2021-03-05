@@ -41,3 +41,6 @@ demos/
 
 # OSX Specifics
 .DS_Store
+
+/dist
+.npmrc

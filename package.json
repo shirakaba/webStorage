@@ -1,16 +1,15 @@
 {
-  "name": "webStorage",
-  "version": "2.1.1",
-  "description": "A minimal Javascript library that improves the way you work with localStorage or sessionStorage.",
-  "main": "dist/webStorage.js",
+  "name": "sandt-web-storage",
+  "version": "2.1.3",
+  "description": "Forked from: https://github.com/georapbox/webStorage",
+  "main": "src/index.js",
   "scripts": {
-    "build": "webpack --env=build",
-    "dev": "webpack --progress --colors --env=dev",
-    "watch": "webpack --progress --colors --watch --env=dev",
-    "prepublish": "npm run dev & npm run build",
     "test": "karma start",
     "lint": "eslint src/**",
     "ci": "npm run lint; npm test;"
+  },
+  "publishConfig": {
+    "registry": "http://192.168.5.104:8081/nexus/content/repositories/npm-internal/"
   },
   "repository": {
     "type": "git",
@@ -44,10 +43,9 @@
     "karma-jasmine": "~1.1.0",
     "karma-phantomjs-launcher": "~1.0.4",
     "phantomjs-prebuilt": "~2.1.15",
-    "webpack": "~3.6.0",
     "yargs": "~9.0.1"
   },
   "dependencies": {
-    "gr-event-dispatcher": "~1.1.1"
+    "sandt-event-dispatcher": "~1.1.1"
   }
 }
